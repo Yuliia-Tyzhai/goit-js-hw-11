@@ -56,7 +56,10 @@ body {
 }
 
 .gallery-card {
+  position: relative;
   width: calc((100% - 48px) / 3);
+  list-style: none;
+  overflow: hidden;
 }
 
 .gallery-img {
@@ -67,6 +70,39 @@ body {
 
 .gallery-link {
   display: block;
+}
+
+.gallery-info {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-right: 1px solid #808080;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.gallery-info p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.likes {
+  margin-left: 20px;
+  margin-right: 28px;
+}
+
+.comments {
+  margin-left: 27px;
+  margin-right: 32px;
+}
+.downloads {
+  margin-right: 25px;
 }
 
 .loader {
